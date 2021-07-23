@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+body{
+    margin: 0px;
+    font-family: 'Bree Serif', serif;
+}
+/* Navigate Bar Style  */
+.nav-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(252, 198, 137);
+}
+/* Nav Left Section  */
+
+.nav-left-content{
+    display: flex;
+    align-items: center;
+   
+    
+    
+}
+.logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+.logo img{
+    height:50px;
+    width: 60px;
+    padding-right: 20px;
+    
+}
+.logo h2{
+    margin: 0px;
+}
+.course-title{
+    padding:20px 5px;
+    position: relative;
+    
+}
+.course-title:hover{
+    background-color: teal;
+    
+}
+.course-title:hover a{
+    color: white;
+}
+.course:hover .course-items{
+    display: block;
+}
+.course-title a{
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+}
+.course-items{
+    display:none;
+    position: absolute;
+    box-shadow: 0px 5px 20px gray;
+    min-width:150px;
+    background-color: white;
+    z-index: 1px;
+}
+.course-items a{
+    display: block;
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    padding:10px ;
+    border-bottom: 1px solid black;
+
+}
+.course-items a:hover{
+    background-color: rgb(252, 198, 137);
+}
+/* Nav Right Section  */
+.nav-right-content{
+    display: flex;
+    flex-direction: row;
+}
+.sign-up{
+    padding:20px 5px;
+    
+}
+
+.sign-up:hover{
+    background-color: teal;
+}
+.sign-up:hover a{
+    color: white;
+}
+
+.nav-right-content a{
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+}
+@media screen and (max-width: 760px){
+    .nav-container{
+        display: none;
+    }
+}
+
+.mobile-nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: rgb(197, 197, 197);
+}
+.icon{
+    font-size: 24px;
+}
+@media screen and (min-width: 761px){
+    .mobile-nav{
+        display: none;
+    }
+}
+/* nav section end */
+
+.container-1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background-color: aliceblue;
+    flex-grow: center;
+    
+}
+.main-form{
+    width: 60%;
+}
+.main-form h1{
+    font-size: 34px;
+}
+.image img{
+    width: 100%;
+    
+}
+
+.email, .password{
+    padding-bottom:20px;
+    width: 80%;
+    border-radius: 10px;
+    
+}
+.email input, .password input{
+    padding: 10px;
+    width: 60%;
+    
+    
+}
+button{
+    padding: 10px;
+    cursor: pointer;
+}
+button:hover{
+    background-color: rgb(248, 121, 74);
+    
+    color: white;
+    
+}
+
