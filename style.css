@@ -9,7 +9,7 @@ body{
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    background-color: rgb(252, 198, 137);
+    background-color: rgb(83, 166, 238);
 }
 /* Nav Left Section  */
 
@@ -42,7 +42,7 @@ body{
     
 }
 .course-title:hover{
-    background-color: teal;
+    background-color: rgb(46, 46, 46);
     
 }
 .course-title:hover a{
@@ -75,7 +75,7 @@ body{
 
 }
 .course-items a:hover{
-    background-color: rgb(252, 198, 137);
+    background-color: rgb(175, 215, 250);
 }
 /* Nav Right Section  */
 .nav-right-content{
@@ -88,7 +88,7 @@ body{
 }
 
 .sign-up:hover{
-    background-color: teal;
+    background-color: rgb(175, 215, 250);
 }
 .sign-up:hover a{
     color: white;
@@ -100,27 +100,13 @@ body{
     font-weight: 600;
     color: rgb(0, 0, 0);
 }
-@media screen and (max-width: 760px){
-    .nav-container{
-        display: none;
-    }
-    .card-container{
-        display:grid;
-        grid-template-columns: repeat(1,1fr);
-        justify-items:center;
-        grid-gap: 40px;
-        padding: 10px;
-    }
-    .container-1{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-around;
-        background-color: aliceblue;
-        flex-grow: center;
-        
-    }
+.container-3{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
 }
+
 
 .mobile-nav{
     display: flex;
@@ -132,28 +118,6 @@ body{
 }
 .icon{
     font-size: 24px;
-}
-@media screen and (min-width: 761px){
-    .mobile-nav{
-        display: none;
-    }
-    .card-container{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        justify-items:center;
-        grid-gap: 40px;
-        padding: 10px;
-        
-    }
-    .container-1{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-around;
-        background-color: aliceblue;
-        flex-grow: center;
-        
-    }
 }
 /* nav section end */
 
@@ -191,13 +155,42 @@ button:hover{
     color: white;
     
 }
+.sign-up-option h3{
+    margin-bottom: 0px;
+    padding: 10px;
+}
+.sign-up-option a{
+    padding: 10px;
+    margin-right: 20px;
+    
+}
+.sign-up-option img{
+    height: 30px;
+    width: 30px;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: rgb(180, 179, 179);
+
+}
+.sign-up-option img:hover{
+    box-shadow: 2px 2px 20px rgb(36, 87, 228);
+}
 .catalog{
     background-image: url(images/bg-1.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
+.catalog-header{
+    margin-top: 0%;
+    padding: 10px;
+    color: rgb(51, 50, 50);
+    display: inline-block;
+}
 .catalog h1{
     text-align: center;
+}
+.catalog-header span{
+    float: right;
 }
 
 .catalog-card{
@@ -217,13 +210,89 @@ button:hover{
     transform: scale(1.2);
     transition: 1.5s;
 }
-.catalog span{
+.catalog span, .text-container span{
     text-align: center;
     background-color: tomato;
     border-radius: 5px;
     padding: 5px;
     cursor: pointer;
 }
-.catalog span:hover{
+.catalog span:hover, .text-container span:hover{
     background-color: rgb(219, 39, 7);
+    color: white;
+}
+
+.container-3{
+    background-color: rgb(154, 218, 255);
+}
+.text-container{
+    
+    padding-left: 20px;
+}
+.text-container h1{
+    font-size: 35px;
+}
+.image-container{
+    width: 100%;
+}
+.image-container img{
+    width: 100%;
+}
+/* media quary start  */
+@media screen and (max-width: 760px){
+    .nav-container{
+        display: none;
+    }
+    .card-container{
+        display:grid;
+        grid-template-columns: repeat(1,1fr);
+        justify-items:center;
+        grid-gap: 40px;
+        padding: 10px;
+    }
+    .container-1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        background-color: rgb(175, 215, 250);
+        flex-grow: center;
+        
+    }
+    .container-3{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+}
+@media screen and (min-width: 761px){
+    .mobile-nav{
+        display: none;
+    }
+    .card-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items:center;
+        grid-gap: 40px;
+        padding: 10px;
+        
+    }
+    .container-1{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        background-color: rgb(175, 215, 250);
+        flex-grow: center;
+        
+    }
+    .container-3{
+        display: flex;
+        flex-direction: row;
+        justify-content:space-between;
+        align-items: center;
+    }
+   
 }
